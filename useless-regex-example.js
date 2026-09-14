@@ -4,7 +4,7 @@
 // instead of a literal dot. A hostname allowlist built this way wrongly accepts
 // "mobbxai" or "mobb-ai".
 function isAllowedHost(host) {
-  return new RegExp('mobb\.ai').test(host);
+  return new RegExp('mobb\\.ai').test(host);
 }
 
 module.exports = { isAllowedHost };
